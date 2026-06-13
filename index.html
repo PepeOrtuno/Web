@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>O.T.R.A — Banda</title>
+  <meta name="description" content="Web oficial de O.T.R.A, banda de Murcia." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Sans:wght@100;300;400&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/music.css" />
+  <link rel="stylesheet" href="css/shows.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+
+  <!-- ── NAVEGACIÓN ── -->
+  <nav id="navbar">
+    <a href="#home" class="nav-logo">O.T.R.A</a>
+    <ul class="nav-links">
+      <li><a href="#about">Nosotros</a></li>
+      <li><a href="#music">Música</a></li>
+      <li><a href="#shows">Fechas</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+    <button class="nav-burger" aria-label="Abrir menú">&#9776;</button>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <span class="hero-name">o.t.r.a</span>
+      <!-- EDITA: cambia el subtítulo aquí -->
+      <p class="hero-tagline">Ruido · Oscuridad · Verdad</p>
+      <div class="hero-divider"></div>
+      <div class="hero-cta">
+        <a href="#music" class="btn btn-primary">Escuchar</a>
+        <a href="#shows" class="btn btn-outline">Próximas fechas</a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ── SOBRE LA BANDA ── -->
+  <section id="about" class="about">
+    <div class="about-visual">
+      <div class="about-glyph">O</div>
+      <!-- EDITA: año de fundación y ciudad -->
+      <span class="about-year">Est. 2020 · Murcia</span>
+    </div>
+    <div class="about-text">
+      <span class="section-label">La banda</span>
+      <!-- EDITA: título y bio -->
+      <h2>Música que no pide permiso</h2>
+      <p>
+        O.T.R.A nació de las noches largas y las palabras que no caben en
+        otro sitio. Cuatro personas, un sonido, ninguna concesión.
+      </p>
+      <p>
+        Desde Murcia, llevamos lo que sentimos directamente al escenario
+        — sin filtros, sin fórmulas, sin red.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── MÚSICA ── -->
+  <section id="music" class="music">
+    <div class="music-header">
+      <span class="section-label">Discografía</span>
+      <h2>Música</h2>
+    </div>
+    <div class="music-grid">
+
+      <!-- EDITA: añade o quita bloques .release según tus lanzamientos -->
+      <div class="release">
+        <div class="release-year">2024</div>
+        <div class="release-title">Sin Salida</div>
+        <div class="release-type">EP · 5 Canciones</div>
+        <ul class="release-tracks">
+          <li>I. Ceniza</li>
+          <li>II. Nada Queda</li>
+          <li>III. Filo</li>
+          <li>IV. Mar de Fondo</li>
+          <li>V. Sin Salida</li>
+        </ul>
+        <!-- EDITA: pon aquí el link a Spotify / Bandcamp -->
+        <a href="#" class="release-link">Escuchar →</a>
+      </div>
+
+      <div class="release">
+        <div class="release-year">2022</div>
+        <div class="release-title">Primer Ruido</div>
+        <div class="release-type">Single · Demo</div>
+        <ul class="release-tracks">
+          <li>Primer Ruido</li>
+          <li>Primer Ruido (Acústico)</li>
+        </ul>
+        <a href="#" class="release-link">Escuchar →</a>
+      </div>
+
+      <div class="release release--upcoming">
+        <div class="release-year">Próximamente</div>
+        <div class="release-title">???</div>
+        <div class="release-type">Nuevo material en camino</div>
+        <p class="release-teaser">Apúntate para saber antes que nadie</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── CONCIERTOS ── -->
+  <section id="shows" class="shows">
+    <div class="shows-header">
+      <div>
+        <span class="section-label">En directo</span>
+        <h2>Fechas</h2>
+      </div>
+    </div>
+
+    <ul class="shows-list">
+      <!-- EDITA: duplica o borra <li class="show-item"> según tus fechas -->
+      <li class="show-item">
+        <span class="show-date">14 Jun 2026</span>
+        <div class="show-info">
+          <span class="show-venue">Sala Roxy</span>
+          <span class="show-city">Murcia</span>
+        </div>
+        <a href="#" class="show-ticket">Entradas</a>
+      </li>
+      <li class="show-item">
+        <span class="show-date">28 Jun 2026</span>
+        <div class="show-info">
+          <span class="show-venue">La Cúpula</span>
+          <span class="show-city">Alicante</span>
+        </div>
+        <a href="#" class="show-ticket">Entradas</a>
+      </li>
+      <li class="show-item">
+        <span class="show-date">12 Jul 2026</span>
+        <div class="show-info">
+          <span class="show-venue">Festival Subterráneo</span>
+          <span class="show-city">Valencia</span>
+        </div>
+        <a href="#" class="show-ticket">Entradas</a>
+      </li>
+      <li class="show-item">
+        <span class="show-date">TBA</span>
+        <div class="show-info">
+          <span class="show-venue">Por confirmar</span>
+          <span class="show-city">Madrid</span>
+        </div>
+        <a href="#" class="show-ticket">Pronto</a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ── CONTACTO ── -->
+  <section id="contact" class="contact">
+    <h2>Contacta con O.T.R.A</h2>
+    <!-- EDITA: tipo de contacto -->
+    <p>Bookers · Prensa · Colaboraciones</p>
+    <!-- EDITA: pon tu email real -->
+    <a href="mailto:banda@otra.es" class="btn btn-primary">banda@otra.es</a>
+    <div class="social-links">
+      <!-- EDITA: pon las URLs reales de tus redes -->
+      <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://open.spotify.com/" target="_blank" rel="noopener">Spotify</a>
+      <a href="https://bandcamp.com/" target="_blank" rel="noopener">Bandcamp</a>
+      <a href="https://youtube.com/" target="_blank" rel="noopener">YouTube</a>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <!-- EDITA: año y nombre -->
+    <p>© 2026 O.T.R.A · Todos los derechos reservados</p>
+    <span class="footer-logo">O.T.R.A</span>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
