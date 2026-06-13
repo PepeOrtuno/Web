@@ -1,0 +1,100 @@
+/* ============================================================
+   base.css — Reset y estilos globales
+   ============================================================ */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-black);
+  color: var(--color-cream);
+  font-family: var(--font-serif);
+  overflow-x: hidden;
+  cursor: crosshair;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ── Botones ── */
+.btn {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding: 0.9rem 2.5rem;
+  border: 0.5px solid;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.btn-primary {
+  border-color: var(--color-red);
+  color: var(--color-cream);
+  background: var(--color-red);
+}
+.btn-primary:hover {
+  background: var(--color-red-bright);
+  border-color: var(--color-red-bright);
+}
+
+.btn-outline {
+  border-color: var(--color-muted);
+  color: var(--color-muted);
+  background: transparent;
+}
+.btn-outline:hover {
+  border-color: var(--color-cream);
+  color: var(--color-cream);
+}
+
+/* ── Etiqueta de sección ── */
+.section-label {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 9px;
+  letter-spacing: 6px;
+  color: var(--color-red);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+/* ── Footer ── */
+.footer {
+  background: var(--color-deep);
+  padding: 2rem 3rem;
+  border-top: 0.5px solid var(--color-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer p {
+  font-family: var(--font-sans);
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: var(--color-muted);
+  text-transform: uppercase;
+}
+.footer-logo {
+  font-family: var(--font-gothic);
+  font-size: 1.2rem;
+  color: var(--color-muted);
+}

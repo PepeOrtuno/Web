@@ -1,0 +1,75 @@
+/* ============================================================
+   about.css — Sección "La banda"
+   ============================================================ */
+.about {
+  background: var(--color-deep);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 80vh;
+}
+
+.about-visual {
+  background: var(--color-black);
+  display: grid;
+  place-items: center;
+  border-right: 0.5px solid var(--color-border);
+  padding: 4rem;
+  position: relative;
+  overflow: hidden;
+}
+.about-visual::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 70%, rgba(80,10,10,0.2), transparent 60%);
+}
+
+.about-glyph {
+  font-family: var(--font-gothic);
+  font-size: 18rem;
+  color: rgba(139, 26, 26, 0.12);
+  line-height: 1;
+  user-select: none;
+  position: absolute;
+}
+
+.about-year {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  letter-spacing: 5px;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  position: relative;
+}
+
+.about-text {
+  padding: 5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-text h2 {
+  font-family: var(--font-serif);
+  font-weight: 300;
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: var(--color-cream);
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.9;
+  color: var(--color-muted);
+  max-width: 38ch;
+}
+.about-text p + p {
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .about { grid-template-columns: 1fr; }
+  .about-visual { display: none; }
+  .about-text { padding: 3rem 1.5rem; }
+}

@@ -1,0 +1,27 @@
+/* ============================================================
+   variables.css — Colores y tokens de diseño de O.T.R.A
+   EDITA AQUÍ para cambiar la paleta de toda la web de golpe
+   ============================================================ */
+:root {
+  /* Fondo principal */
+  --color-black:  #0a0808;
+  --color-deep:   #110e0e;
+  --color-border: #2a2020;
+
+  /* Acento rojo — cambia esto para otro color principal */
+  --color-red:        #8b1a1a;
+  --color-red-bright: #c0392b;
+
+  /* Tipografía */
+  --color-cream:  #e8e0d0;
+  --color-muted:  #6b6056;
+
+  /* Fuentes */
+  --font-gothic:  'UnifrakturMaguntia', cursive;
+  --font-serif:   'Cormorant Garamond', serif;
+  --font-sans:    'Josefin Sans', sans-serif;
+
+  /* Espaciado */
+  --section-padding: 6rem 3rem;
+  --nav-height: 70px;
+}

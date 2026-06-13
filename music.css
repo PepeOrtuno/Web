@@ -1,0 +1,109 @@
+/* ============================================================
+   music.css — Sección discografía
+   ============================================================ */
+.music {
+  background: var(--color-black);
+  padding: var(--section-padding);
+}
+
+.music-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.music-header .section-label {
+  margin-bottom: 0.5rem;
+}
+.music-header h2 {
+  font-family: var(--font-gothic);
+  font-size: 3.5rem;
+  color: var(--color-cream);
+}
+
+.music-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1px;
+  background: var(--color-border);
+}
+
+.release {
+  background: var(--color-deep);
+  padding: 2.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.release::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 2px;
+  background: var(--color-red);
+  transform: scaleY(0);
+  transition: transform 0.3s;
+  transform-origin: bottom;
+}
+.release:hover { background: #1a1212; }
+.release:hover::before { transform: scaleY(1); }
+
+.release-year {
+  font-family: var(--font-sans);
+  font-size: 9px;
+  letter-spacing: 4px;
+  color: var(--color-red);
+  text-transform: uppercase;
+}
+
+.release-title {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.release-type {
+  font-family: var(--font-sans);
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+
+.release-tracks {
+  list-style: none;
+  margin-bottom: auto;
+}
+.release-tracks li {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  padding: 0.35rem 0;
+  border-bottom: 0.5px solid var(--color-border);
+  font-style: italic;
+  transition: color 0.2s;
+}
+.release:hover .release-tracks li { color: #9a8878; }
+
+.release-link {
+  display: inline-block;
+  margin-top: 1.2rem;
+  font-family: var(--font-sans);
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--color-red);
+  transition: color 0.2s;
+}
+.release-link:hover { color: var(--color-red-bright); }
+
+.release--upcoming .release-teaser {
+  font-family: var(--font-sans);
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: var(--color-red);
+  text-transform: uppercase;
+  margin-top: 1rem;
+}

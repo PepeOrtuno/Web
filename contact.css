@@ -1,0 +1,80 @@
+/* ============================================================
+   contact.css — Sección contacto
+   ============================================================ */
+.contact {
+  background: var(--color-black);
+  padding: 6rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 50vh;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Texto gigante decorativo de fondo */
+.contact::before {
+  content: 'O.T.R.A';
+  font-family: var(--font-gothic);
+  font-size: 22rem;
+  color: rgba(139, 26, 26, 0.05);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  user-select: none;
+  pointer-events: none;
+}
+
+.contact h2 {
+  font-family: var(--font-serif);
+  font-weight: 300;
+  font-style: italic;
+  font-size: 3rem;
+  position: relative;
+}
+
+.contact > p {
+  font-family: var(--font-sans);
+  font-size: 9px;
+  letter-spacing: 5px;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.contact .btn-primary {
+  position: relative;
+}
+
+.social-links {
+  display: flex;
+  gap: 3rem;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  font-family: var(--font-sans);
+  font-size: 9px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  transition: color 0.3s;
+  border-bottom: 0.5px solid transparent;
+  padding-bottom: 0.2rem;
+}
+.social-links a:hover {
+  color: var(--color-cream);
+  border-bottom-color: var(--color-red);
+}
+
+@media (max-width: 600px) {
+  .social-links { gap: 1.5rem; flex-wrap: wrap; justify-content: center; }
+  .contact::before { font-size: 10rem; }
+}

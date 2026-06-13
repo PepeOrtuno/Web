@@ -1,0 +1,90 @@
+/* ============================================================
+   shows.css — Sección fechas de conciertos
+   ============================================================ */
+.shows {
+  background: var(--color-deep);
+  padding: var(--section-padding);
+}
+
+.shows-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 3rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.shows-header h2 {
+  font-family: var(--font-gothic);
+  font-size: 3rem;
+  color: var(--color-cream);
+}
+
+.shows-list {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.show-item {
+  display: grid;
+  grid-template-columns: 130px 1fr auto;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.5rem 0;
+  border-bottom: 0.5px solid var(--color-border);
+  transition: padding-left 0.2s;
+}
+.show-item:hover { padding-left: 1rem; }
+
+.show-date {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: var(--color-red);
+  text-transform: uppercase;
+}
+
+.show-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.show-venue {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.show-city {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: var(--color-muted);
+  text-transform: uppercase;
+}
+
+.show-ticket {
+  font-family: var(--font-sans);
+  font-size: 9px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  padding: 0.5rem 1.2rem;
+  border: 0.5px solid var(--color-border);
+  color: var(--color-muted);
+  transition: all 0.2s;
+}
+.show-item:hover .show-ticket {
+  border-color: var(--color-red);
+  color: var(--color-red);
+}
+
+@media (max-width: 768px) {
+  .show-item {
+    grid-template-columns: 80px 1fr;
+    gap: 1rem;
+  }
+  .show-ticket { display: none; }
+}
